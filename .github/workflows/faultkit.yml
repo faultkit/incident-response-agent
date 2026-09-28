@@ -36,7 +36,7 @@ jobs:
       # Runs once the faultkit skill has written .faultkit/invariants/manifest.json.
       - name: Prove resilience invariants
         if: hashFiles('.faultkit/invariants/manifest.json') != ''
-        uses: faultkit/action@97410fbd6eea8b15ed7afbda3204cbd71f7ad918 # main after v1.0.0: values and working-directory
+        uses: faultkit/action@97410fbd6eea8b15ed7afbda3204cbd71f7ad918 # v1.1.0
         with:
           threshold: 100
           github-token: ${{ github.token }}
